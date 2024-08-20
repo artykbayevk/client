@@ -24,9 +24,3 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #pragma once
-
-#ifdef TRITON_ENABLE_GPU
-#include <cuda_runtime_api.h>
-#else
-struct cudaIpcMemHandle_t {};
-#endif  // TRITON_ENABLE_GPU
